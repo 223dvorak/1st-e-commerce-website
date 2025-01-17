@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/e-com/style/style.css" />
+    <link rel="stylesheet" href="/e-com/style/sinscrire.css" />
+    <title>S'inscrire</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/e-com/pages/index.html">
+            <img src="/e-com/icons/logo-transparent-svg.svg" alt="MonLogo" />
+          </a>
+        </div>
+        <button id="theme-toggle" class="btn" aria-label="Changer le thème">
+          theme
+        </button>
+
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="/e-com/pages/produits.html">Produits</a></li>
+          <li><a href="/e-com/pages/panier.html">Panier</a></li>
+          <li>
+            <a href="/e-com/pages/sinscrire.html" class="btn">S'inscrire</a>
+          </li>
+          <li>
+            <a href="/e-com/pages/seconnecter.html" class="btn">Se connecter</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="log">
+      <div class="container">
+        <form action="/submit_signup" method="post" class="signup-form">
+          <h2>S'inscrire</h2>
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" required />
+
+          <input type="submit" value="S'inscrire" class="submit-button" />
+        </form>
+      </div>
+    </section>
+
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navLinks = document.querySelector(".nav-links");
+
+      mobileMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

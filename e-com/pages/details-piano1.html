@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/e-com/style/style.css" />
+    <link rel="stylesheet" href="/e-com/style/details.css" />
+    <title>Détails du Piano Modèle 1</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/e-com/pages/index.html">
+            <img src="/e-com/icons/logo-transparent-svg.svg" alt="MonLogo" />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/e-com/pages/produits.html">Produits</a></li>
+          <li><a href="/e-com/pages/panier.html" class="btn">Panier</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="product-details">
+      <div class="container">
+        <h2>Piano Modèle 1</h2>
+        <img src="/e-com/imgs/piano1.jpg" alt="Piano Modèle 1" />
+        <p class="description">
+          Ce piano est parfait pour les débutants et les musiciens expérimentés.
+          Il offre une qualité sonore exceptionnelle et un design élégant.
+        </p>
+        <p class="price">Prix: €499</p>
+        <button
+          id="add-to-cart"
+          class="btn"
+          data-product-id="1"
+          data-product-name="Piano Modèle 1"
+          data-product-price="499"
+        >
+          Ajouter au Panier
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 i-music.</p>
+      </div>
+    </footer>
+
+    <script src="/e-com/js/details.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/e-com/style/style.css" />
+    <title>Site E-commerce</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/e-com/pages/index.html">
+            <img src="/e-com/icons/logo-transparent-svg.svg" alt="MonLogo" />
+          </a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <button id="theme-toggle" class="btn" aria-label="Changer le thème">
+          theme
+        </button>
+        <ul class="nav-links">
+          <li><a href="/e-com/pages/produits.html">Produits</a></li>
+          <li><a href="/e-com/pages/panier.html">Panier</a></li>
+          <li>
+            <a href="/e-com/pages/sinscrire.html" class="btn">S'inscrire</a>
+          </li>
+          <li>
+            <a href="/e-com/pages/seconnecter.html" class="btn">Se connecter</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img src="/e-com/imgs/couverture-index.jpg" alt="Couverture" />
+      <div class="hero-text">
+        <h1>Découvrez nos produits exclusifs</h1>
+        <p>La qualité et le style à portée de main. Faites-vous plaisir !</p>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <h2>Produits en vedette</h2>
+      <div class="product-grid">
+        <div class="product-item">
+          <img src="/e-com/imgs/piano15.jpg" alt="Produit 1" />
+
+          <a href="/e-com/pages/produits.html" class="btn">Acheter</a>
+        </div>
+        <div class="product-item">
+          <img src="/e-com/imgs/piano14.jpg" alt="Produit 2" />
+
+          <a href="/e-com/pages/produits.html" class="btn">Acheter</a>
+        </div>
+        <div class="product-item">
+          <img src="/e-com/imgs/piano13.jpg" alt="Produit 3" />
+
+          <a href="/e-com/pages/produits.html" class="btn">Acheter</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Avis de nos clients</h2>
+      <blockquote>
+        <p>
+          "Un service exceptionnel et des produits de qualité ! Je recommande
+          vivement."
+        </p>
+        <cite>- Client satisfait</cite>
+      </blockquote>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 i-music</p>
+        <div class="social-icons">
+          <a href="/e-com/icons/square-facebook-brands-solid.svg">
+            <img
+              src="/e-com/icons/square-facebook-brands-solid.svg"
+              alt="Facebook"
+            />
+          </a>
+          <a href="/e-com/icons/instagram-brands-solid.svg">
+            <img
+              src="/e-com/icons/instagram-brands-solid.svg"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/e-com/js/theme.js"></script>
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navLinks = document.querySelector(".nav-links");
+
+      mobileMenu.addEventListener("click", () => {
+        navLinks.classList.toggle(" active");
+        mobileMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/e-com/style/style.css" />
+    <link rel="stylesheet" href="/e-com/style/cart.css" />
+    <title>Mon Panier</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/e-com/pages/index.html">
+            <img src="/e-com/icons/logo-transparent-svg.svg" alt="MonLogo" />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/e-com/pages/produits.html">Produits</a></li>
+          <li><a href="/e-com/pages/panier.html" class="btn">Panier</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="cart">
+      <div class="container">
+        <h2>Mon Panier</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: €0</p>
+        <button id="checkout" class="btn">Passer à la caisse</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 i-music.</p>
+      </div>
+    </footer>
+
+    <script src="/e-com/js/cart.js"></script>
+  </body>
+</html>

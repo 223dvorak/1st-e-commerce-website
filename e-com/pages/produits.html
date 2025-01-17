@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/e-com/style/style.css" />
+    <link rel="stylesheet" href="/e-com/style/produits.css" />
+    <title>Site E-commerce</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/e-com/pages/index.html">
+            <img src="/e-com/icons/logo-transparent-svg.svg" alt="MonLogo" />
+          </a>
+        </div>
+        <button id="theme-toggle" class="btn" aria-label="Changer le thème">
+          theme
+        </button>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/e-com/pages/produits.html">Produits</a></li>
+          <li><a href="/e-com/pages/panier.html">Panier</a></li>
+          <li>
+            <a href="/e-com/pages/sinscrire.html" class="btn">S'inscrire</a>
+          </li>
+          <li>
+            <a href="/e-com/pages/seconnecter.html" class="btn">Se connecter</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="produits">
+      <div class="container">
+        <h2>Nos Produits</h2>
+        <div class="produit-cards">
+          <div class="produit-card">
+            <img src="/e-com/imgs/piano.jpg" alt="Piano" />
+            <h3>Piano</h3>
+
+            <a href="/e-com/pages/catalogue.html"
+              ><button class="btn">Voir Détails</button></a
+            >
+          </div>
+          <div class="produit-card">
+            <img src="/e-com/imgs/guitare.jpg" alt="Guitare" />
+            <h3>Guitare</h3>
+
+            <button class="btn">Voir Détails</button>
+          </div>
+          <div class="produit-card">
+            <img src="/e-com/imgs/violon.jpg" alt="Violon" />
+            <h3>Violon</h3>
+
+            <button class="btn">Voir Détails</button>
+          </div>
+          <div class="produit-card">
+            <img src="/e-com/imgs/batterie.jpg" alt="Batterie" />
+            <h3>Batterie</h3>
+
+            <button class="btn">Voir Détails</button>
+          </div>
+          <div class="produit-card">
+            <img src="/e-com/imgs/saxophone.jpg" alt="Saxophone" />
+            <h3>Saxophone</h3>
+
+            <button class="btn">Voir Détails</button>
+          </div>
+          <div class="produit-card">
+            <img src="/e-com/imgs/flute.jpg" alt="Flûte" />
+            <h3>Flûte</h3>
+
+            <button class="btn">Voir Détails</button>
+          </div>
+          <div class="produit-card">
+            <img src="/e-com/imgs/ukulele.jpg" alt="Ukulélé" />
+            <h3>Ukulélé</h3>
+
+            <button class="btn">Voir Détails</button>
+          </div>
+          <div class="produit-card">
+            <img src="/e-com/imgs/mandoline.jpg" alt="Mandoline" />
+            <h3>Mandoline</h3>
+
+            <button class="btn">Voir Détails</button>
+          </div>
+          <div class="produit-card">
+            <img src="/e-com/imgs/harmonica.jpg" alt="Harmonica" />
+            <h3>Harmonica</h3>
+
+            <button class="btn">Voir Détails</button>
+          </div>
+          <div class="produit-card">
+            <img src="/e-com/imgs/trompette.jpg" alt="Trompette" />
+            <h3>Trompette</h3>
+
+            <button class="btn">Voir Détails</button>
+          </div>
+          <div class="produit-card">
+            <img src="/e-com/imgs/glockenspiel.jpg" alt="Glockenspiel" />
+            <h3>Glockenspiel</h3>
+
+            <button class="btn">Voir Détails</button>
+          </div>
+          <div class="produit-card">
+            <img src="/e-com/imgs/accordeon.jpg" alt="Accordéon" />
+            <h3>Accordéon</h3>
+
+            <button class="btn">Voir Détails</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/e-com/js/theme.js"></script>
+
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navLinks = document.querySelector(".nav-links");
+
+      mobileMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      });
+    </script>
+
+    <footer>
+      <div class="footer-container">
+        <p>Contactez-nous : <a href="tel:+33123456789">01 23 45 67 89</a></p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/votrepage" target="_blank">
+            <img
+              src="/e-com/icons/square-facebook-brands-solid.svg"
+              alt="Facebook"
+            />
+          </a>
+          <a href="https://www.instagram.com/votreprofil" target="_blank">
+            <img
+              src="/e-com/icons/instagram-brands-solid.svg"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
